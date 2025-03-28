@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Component/Navbar';
 import {Routes, Route} from 'react-router-dom';
 import Hero from './Pages/Hero';
+import Home from './Pages/Home';
 
 
 const App = () => {
@@ -12,15 +13,9 @@ const App = () => {
       
 {/* Routing */}
 <Routes>
-  <Routes path="/" element={<Hero />}/>
-  <Routes path="/feature" element={<Features />}/>
-  <Routes path="/content" element={<Contents />}/>
-  <Routes path="/gallery" element={<Gallery />}/>
-  <Routes path="/partner" element={<Partners />}/>
-  <Routes path="/testimonial" element={<Testimonials />}/>
-  <Routes path="/try" element={<Try />}/>
-  <Routes path="/footer" element={<Footer />}/>
-
+  <Route path="/" element={<Hero />}/>
+  <Route path="/" element={<Home />}/>
+  
 
 
 </Routes>
