@@ -1,15 +1,7 @@
 import React from 'react'
-import './App.css';
 import Navbar from './Component/Navbar';
 import {Routes, Route} from 'react-router-dom';
 import Hero from './Pages/Hero';
-import Features from './Component/Feature';
-import Contents from './Component/Contents';
-import Gallery from './Component/Gallery';
-import Partners from './Component/Partners';
-import Testimonials from './Component/Testimonials';
-import Try from './Component/Try';
-import Footer from './Component/Footer';
 
 
 const App = () => {
@@ -17,14 +9,7 @@ const App = () => {
     <div>
       <Navbar />
       <Hero/>
-      <Features/>
-      <Contents/>
-      <Gallery/>
-      <Partners/>
-      <Testimonials/>    
-      <Try/>
-      <Footer/>
-
+      
 {/* Routing */}
 <Routes>
   <Routes path="/" element={<Hero />}/>
