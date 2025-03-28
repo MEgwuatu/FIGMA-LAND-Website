@@ -4,12 +4,13 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { AnimatePresence, motion } from "framer-motion";
 import { navlinks } from '../Constant/index';
+import { itemVariants,  sideVariants} from '../Utils/Motion'
 
 const Navbar = () => {
 
     const [isMenuOpen, setMenuOpen] = useState(false)
 
-    // toggle menu:
+    // toggle menu
     const handleMenuClick = () => {
         setMenuOpen((prevState) => !prevState);
       }
@@ -42,7 +43,7 @@ const Navbar = () => {
 
             <div className=" w-[10%] pt-3  pl-4" onClick={handleMenuClick}>
          {isMenuOpen ? (
-           <AiOutlineClose size='40px' cursor="pointer" />
+           <AiOutlineClose size='40px' cursor="pointer" style={{color: '#fff'}} />
          ) : (
           <BiMenuAltRight  size='40px' cursor="pointer"   style={{color: '#fff'}} />
          )}
